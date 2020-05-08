@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('SCM Checkout'){
 		    steps{
-			git credentialsId: 'NA', url: 'https://github.com/kommipraneeth/spring-boot-sample-app'
+			    git credentialsId: 'NA', url: 'https://github.com/kommipraneeth/spring-boot-sample-app'
 			}
 		}
 
