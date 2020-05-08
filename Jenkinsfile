@@ -9,7 +9,7 @@ pipeline {
 
 		stage('Compile Package'){
 			steps{
-			    sh 'mvn clean install -DSkipTests'
+			    sh 'mvn clean install -DskipTests'
 			}
         }
     }
