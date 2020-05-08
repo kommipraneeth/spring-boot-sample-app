@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Run the maven build
                 script {
-                    // Get the Maven tool.
+                    // Get the Maven tool
                     // ** NOTE: This 'M3' Maven tool must be configured
                     // **       in the global configuration.
                     echo 'Pulling...' + env.BRANCH_NAME
