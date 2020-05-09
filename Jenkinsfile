@@ -1,7 +1,8 @@
 pipeline {
     agent any
     tools {
-        maven 'M3'
+        maven 'Maven 3.6.3'
+        jdk 'jdk8'
     }
 	stages {
 		stage('SCM Checkout'){
@@ -12,7 +13,7 @@ pipeline {
 
 		stage('Compile Package'){
 			steps{
-			    sh 'mvn install -DskipTests'
+			    sh 'maven install -DskipTests'
 			}
         }
     }
